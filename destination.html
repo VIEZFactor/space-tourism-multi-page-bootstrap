@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
+  <title>Frontend Mentor | Space tourism website</title>
+  
+  <!-- STYLES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+  
+  <script src="https://kit.fontawesome.com/62bf32aa9b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  
+</head>
+<body id="destination">
+  <nav class="fixed-top navbar navbar-expand-md navbar-menu">
+      <div class="container">
+          <a class="navbar-brand menu-logo" href="index.html">
+            <img src="assets/shared/logo.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">00 HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="destination.html">01 DESTINATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="crew.html">02 CREW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="technology.html">03 TECHNOLOGY</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">    
+          <h5>01 PICK YOUR DESTINATION</h5>
+          <div class="destinations destination-moon">
+            <img class="img-fluid destination-image" src="assets/destination/image-moon.png" alt="MOON">
+          </div>
+          <div class="destinations destination-mars" style="display: none;">
+            <img class="img-fluid destination-image" src="assets/destination/image-mars.png" alt="MARS">
+          </div>
+          <div class="destinations destination-europa" style="display: none;">
+            <img class="img-fluid destination-image" src="assets/destination/image-europa.png" alt="EUROPA">
+          </div>
+          <div class="destinations destination-titan" style="display: none;">
+            <img class="img-fluid destination-image" src="assets/destination/image-titan.png" alt="TITAN">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">               
+          <ul id="list-destinations" class="nav justify-content-center justify-content-lg-start">
+            <li class="nav-item">
+              <button class="btn btn-link active" data-destination="moon" href="#">MOON</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-link" data-destination="mars" href="#">MARS</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-link" data-destination="europa" href="#">EUROPA</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-link" data-destination="titan" href="#">TITAN</button>
+            </li>
+          </ul>         
+          
+          <div class="destinations destination-moon">
+            <h2>MOON</h2>
+            <p class="description">
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-sm">
+                  <h6>
+                    AVG. DISTANCE
+                  </h6>
+                  <h4>
+                    384,400 KM
+                  </h4>
+              </div>
+              <div class="col-12 col-sm">
+                  <h6>
+                    EST. TRAVEL TIME
+                  </h6>
+                  <h4>
+                    3 DAYS
+                  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="destinations destination-mars" style="display:none;">
+            <h2>MARS</h2>
+            <p class="description">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+            </p>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-sm">
+                  <h6>
+                    AVG. DISTANCE
+                  </h6>
+                  <h4>
+                    225 MIL. KM
+                  </h4>
+              </div>
+              <div class="col-12 col-sm">
+                  <h6>
+                    EST. TRAVEL TIME
+                  </h6>
+                  <h4>
+                    9 MONTHS
+                  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="destinations destination-europa" style="display:none;">
+            <h2>EUROPA</h2>
+            <p class="description">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+            </p>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-sm">
+                  <h6>
+                    AVG. DISTANCE
+                  </h6>
+                  <h4>
+                    628 MIL. KM
+                  </h4>
+              </div>
+              <div class="col-12 col-sm">
+                  <h6>
+                    EST. TRAVEL TIME
+                  </h6>
+                  <h4>
+                    3 YEARS
+                  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="destinations destination-titan" style="display:none;">
+            <h2>TITAN</h2>
+            <p class="description">
+              The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+            </p>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-sm">
+                  <h6>
+                    AVG. DISTANCE
+                  </h6>
+                  <h4>
+                    1.6 BIL. KM
+                  </h4>
+              </div>
+              <div class="col-12 col-sm">
+                  <h6>
+                    EST. TRAVEL TIME
+                  </h6>
+                  <h4>
+                    7 YEARS
+                  </h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $( document ).ready(function() {
+      $("#list-destinations button").click(function () {
+        $("#list-destinations button").removeClass('active');
+        $(this).addClass('active');
+        var destination = $(this).attr('data-destination') ;
+        $('.destinations').hide('300');
+        $('.destinations.destination-'+destination).show('300');
+        //alert(destination);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
+  <title>Frontend Mentor | Space tourism website</title>
+  
+  <!-- STYLES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+  
+  <script src="https://kit.fontawesome.com/62bf32aa9b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  
+</head>
+<body id="crew">
+  <nav class="fixed-top navbar navbar-expand-md navbar-menu">
+      <div class="container">
+          <a class="navbar-brand menu-logo" href="index.html">
+            <img src="assets/shared/logo.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">00 HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destination.html">01 DESTINATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="crew.html">02 CREW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="technology.html">03 TECHNOLOGY</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5>02 MEET YOUR CREW</h5>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        
+        <div class="col-12 col-lg-6 order-sm-2">    
+          <div class="crew crew-douglas">
+            <img class="img-fluid crew-image" src="assets/crew/image-douglas-hurley.png" alt="DOUGLAS HURLEY">
+            <hr class="d-block d-sm-none">
+          </div>
+          <div class="crew crew-mark" style="display:none;">
+            <img class="img-fluid crew-image" src="assets/crew/image-mark-shuttleworth.png" alt="MARK SHUTTLEWORTH">
+            <hr class="d-block d-sm-none">
+          </div>
+          <div class="crew crew-victor" style="display:none;">
+            <img class="img-fluid crew-image" src="assets/crew/image-victor-glover.png" alt="VICTOR GLOVER">
+            <hr class="d-block d-sm-none">
+          </div>
+          <div class="crew crew-anousheh" style="display:none;">
+            <img class="img-fluid crew-image" src="assets/crew/image-anousheh-ansari.png" alt="ANOUSHEH ANSARI">
+            <hr class="d-block d-sm-none">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 order-sm-1">                               
+          
+
+          <div class="order-last order-sm-first">
+            <ul id="list-crew" class="nav justify-content-center justify-content-lg-start">
+              <li class="nav-item">
+                <button class="btn btn-link active" data-member="douglas" href="#"></button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-link" data-member="mark" href="#"></button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-link" data-member="victor" href="#"></button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-link" data-member="anousheh" href="#"></button>
+              </li>
+            </ul> 
+          </div> 
+
+          <div class="order-first order-sm-last">
+            <div class="crew crew-douglas">
+              <h3>COMMANDER</h3>
+              <h1>Douglas Hurley</h1>
+              <p>
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut.
+                He launched into space for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </div>
+            <div class="crew crew-mark" style="display: none;">
+              <h3>MISSION SPECIALIST</h3>
+              <h1>MARK SHUTTLEWORTH</h1>
+              <p>
+                Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based
+                Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+              </p>
+            </div>
+            <div class="crew crew-victor" style="display: none;">
+              <h3>PILOT</h3>
+              <h1>Victor Glover</h1>
+              <p>
+                Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station.
+                Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, 
+                and served as a station systems flight engineer. 
+              </p>
+            </div>
+            <div class="crew crew-anousheh" style="display: none;">
+              <h3>FLIGHT ENGINEER</h3>
+              <h1>Anousheh Ansari</h1>
+              <p>
+                Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth
+                self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. 
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $( document ).ready(function() {
+      $("#list-crew button").click(function () {
+        $("#list-crew button").removeClass('active');
+        $(this).addClass('active');
+        var member = $(this).attr('data-member') ;
+        $('.crew').hide('300');
+        $('.crew.crew-'+member).show('300');
+        //alert(destination);
+      });
+    });
+  </script>
+
+</body>
+</html>
